@@ -6,33 +6,24 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            // по номеру дня вывести день недели
-
-            Console.Write("Введите число:");
-            int num = Convert.ToInt32(Console.ReadLine());
-            switch(num)
+            // написать программу, которая по номеру (1 - зима, 2 - весна, 3 - лето, 4 - осень) будет выводить
+            //в соотвестии этому времени года месяцы и кол-во дней в этом месяце
+            int s;
+            s = Convert.ToInt32(Console.ReadLine());
+            switch(s)
             {
-                case 1:Console.WriteLine("Понедельник");
+                case 1:Console.WriteLine("Декабрь(31), Январь(31), Февраль (28/29)");
                     break;
                 case 2:
-                    Console.WriteLine("Вторник");
+                    Console.WriteLine("Март(31), Апрель(30), Май(31)");
                     break;
                 case 3:
-                    Console.WriteLine("Среда");
+                    Console.WriteLine("Июню(30), Июль(31), Август(31)");
                     break;
                 case 4:
-                    Console.WriteLine("Четверг");
+                    Console.WriteLine("Сентябрь (30), Октябрь(31), Ноябрь(31)");
                     break;
-                case 5:
-                    Console.WriteLine("Пятница");
-                    break;
-                case 6:
-                    Console.WriteLine("Суббота");
-                    break;
-                case 7:
-                    Console.WriteLine("Воскресенье");
-                    break;
-                default: Console.WriteLine("Ошибка");
+                default:Console.WriteLine("Ошибка");
                     break;
             }
             Console.ReadKey();
